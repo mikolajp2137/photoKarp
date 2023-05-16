@@ -23,5 +23,5 @@ def rabin_karp_image_search(image, pattern):
             window = image[i:i + k, j:j + l]
             window_hash = rolling_hash(window)
             if window_hash == pattern_hash and (window == pattern).all():
-                return (j, i)
-    return None
+                return True
+    return False
