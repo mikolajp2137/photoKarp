@@ -15,6 +15,6 @@ image2 = np.array([[1,'b','c','d'],
                    ['a',1,'e','f'],
                    ['z','z','z','z']])
 pattern2 = np.array([['a','1'],
-                     ['h','z']])
+                     ['z','z']])
 location2 = rabin_karp_image_search(image2,pattern2)
 print(location2)
